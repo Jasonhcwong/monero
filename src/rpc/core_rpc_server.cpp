@@ -209,6 +209,8 @@ namespace cryptonote
     }
     res.database_size = m_core.get_blockchain_storage().get_db().get_database_size();
     res.update_available = m_core.is_update_available();
+    res.release_name = MONERO_RELEASE_NAME;
+    res.version_full = MONERO_VERSION_FULL;
     return true;
   }
   //------------------------------------------------------------------------------------------------------------------------------
@@ -1607,6 +1609,8 @@ namespace cryptonote
     }
     res.database_size = m_core.get_blockchain_storage().get_db().get_database_size();
     res.update_available = m_core.is_update_available();
+    res.release_name = MONERO_RELEASE_NAME;
+    res.version_full = MONERO_VERSION_FULL;
     return true;
   }
   //------------------------------------------------------------------------------------------------------------------------------

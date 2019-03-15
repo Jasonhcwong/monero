@@ -894,6 +894,8 @@ namespace cryptonote
       bool was_bootstrap_ever_used;
       uint64_t database_size;
       bool update_available;
+      std::string release_name;
+      std::string version_full;
 
       BEGIN_KV_SERIALIZE_MAP()
         KV_SERIALIZE(status)
@@ -928,6 +930,8 @@ namespace cryptonote
         KV_SERIALIZE(was_bootstrap_ever_used)
         KV_SERIALIZE(database_size)
         KV_SERIALIZE(update_available)
+        KV_SERIALIZE(release_name)
+        KV_SERIALIZE(version_full)
       END_KV_SERIALIZE_MAP()
     };
   };
